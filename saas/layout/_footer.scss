@@ -1,0 +1,127 @@
+.link-logo {
+  margin-bottom: 20px;
+}
+
+.join-in {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-items:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-logo {
+  color: $white-color;
+}
+
+.join-in-list {
+  display: flex;
+  justify-content: space-between;
+
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+footer {
+  background-color: $footer-background-color;
+  height: 252px;
+  padding-top: 48px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+/* АДРЕС В ФУТЕРЕ */
+
+.city-address {
+  color: $white-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-icon-svg {
+  fill: $white-color;
+  margin: auto;
+}
+
+.footer-social-icon {
+  display: flex;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+}
+
+/* КОНТАКТЫ В ФУТЕРЕ */
+
+.footer-contacts {
+  color: $footer-contacts-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.join-in {
+  color: $white-color;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-button-icon {
+  fill: $white-color;
+}
+
+.footer-text-button {
+  margin-right: 10px;
+}
+
+.form-footer {
+  display: flex;
+
+  input {
+    background-color: transparent;
+    height: 50px;
+    width: 358px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+  }
+}
+
+.form-footer {
+  position: relative;
+}
+
+.form-footer-label {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-footer-field {
+  color: rgba(255, 255, 255, 0.6);
+  text-indent: 16px;
+
+  &:not(:placeholder-shown) + .form-footer-label {
+    visibility: hidden;
+  }
+}
