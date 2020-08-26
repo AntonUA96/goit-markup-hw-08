@@ -3,11 +3,16 @@
   color: $hover-color;
   font-family: $secondary-font;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 
   &-span {
     color: $secondary-text-color;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 85px;
+    font-size: 26px;
+    line-height: 1.2;
   }
 }

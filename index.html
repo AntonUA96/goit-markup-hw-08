@@ -18,13 +18,13 @@
         <a class="logo" href="./index.html" lang="en">
           Web <span class="logo-span">Studio</span>
         </a>
-        <button type="button" class="menu-btn">
+        <button type="button" class="menu-btn" data-menu-button>
           <svg width="40" height="40">
             <use class="icon-open" href="./image/sprite.svg#menu-open-btn"></use>
             <use class="icon-close" href="./image/sprite.svg#menu-close-btn"></use>
           </svg>
         </button>
-        <div class="menu-wrapper">
+        <div class="menu-wrapper" data-menu>
           <nav class="navigation">
             <ul class="navigation-list list">
               <li class="item">
@@ -60,7 +60,8 @@
       </div>
     </header>
     <main>
-      <!-- <section class="main-hero">
+      <div class="banner">
+      <section class="main-hero">
         <div class="container">
           <h1 class="hero-title">
             Эффективное решение <br />
@@ -71,7 +72,8 @@
           </button>
         </div>
       </section>
-      <section class="about-us container">
+      </div>
+      <!-- <section class="about-us container">
         <h2 hidden>О нас</h2>
         <ul class="list about-us-list">
           <li class="item">
@@ -595,5 +597,6 @@
       </form>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
