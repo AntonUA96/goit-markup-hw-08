@@ -353,18 +353,25 @@ template {
 
 .modal-form {
   position: relative;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   padding: 40px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .modal-form-title {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1, 15;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
@@ -399,7 +406,7 @@ template {
 .modal-form-message-label {
   position: absolute;
   font-size: 12px;
-  line-height: 1, 17px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   top: 0;
   left: 0;
@@ -408,10 +415,16 @@ template {
 }
 
 .modal-form-option-label-span {
-  font-size: 14px;
-  line-height: 1, 7;
+  font-size: 12px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-option-label-span {
+    font-size: 14px;
+  }
 }
 
 .modal-form-option-label-span a {
@@ -567,6 +580,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .menu-wrapper {
+    background-color: #fff;
     position: absolute;
     display: none;
     top: 0;
@@ -729,41 +743,58 @@ template {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .banner {
-    background-image: url(../../image/header-Img.jpg);
-  }
+.hero-title {
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 1200px) {
-  .banner {
-    background-image: url(../../image/header-Img@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .banner {
-    background-image: url(../../image/Header-img-tablet.jpg);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 768px) {
-  .banner {
-    background-image: url(../../image/Header-img-tablet@2x.jpg);
-  }
+.main-hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .banner {
   min-height: 400px;
-  background-image: url(../../image/Header-img-mobile.jpg);
+  background-image: url(../../image/header-img-mobile.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 320px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 320px) and (max-width: 767px) {
   .banner {
-    background-image: url(../../image/Header-img-mobile@2x.jpg);
+    background-image: url(../../image/header-img-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .banner {
+    background-image: url(../../image/header-img-tablet.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 768px) and (max-width: 1199px) {
+  .banner {
+    background-image: url(../../image/header-img-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    background-image: url(../../image/header-img.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 1200px) {
+  .banner {
+    background-image: url(../../image/header-img@2x.jpg);
   }
 }
 

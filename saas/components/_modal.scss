@@ -14,18 +14,24 @@
 
 .modal-form {
   position: relative;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
+
   display: flex;
   flex-direction: column;
   background-color: #fff;
   padding: 40px;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-form-title {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1, 15;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
@@ -60,7 +66,7 @@
 .modal-form-message-label {
   position: absolute;
   font-size: 12px;
-  line-height: 1, 17px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   top: 0;
   left: 0;
@@ -69,10 +75,14 @@
 }
 
 .modal-form-option-label-span {
-  font-size: 14px;
-  line-height: 1, 7;
+  font-size: 12px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: $title-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 
   a {
     display: inline;
