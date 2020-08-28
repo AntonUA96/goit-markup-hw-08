@@ -1,26 +1,36 @@
-.what-we-do {
-  padding-bottom: 94px;
-}
-.what-we-do-list {
-  display: flex;
-  justify-content: space-between;
+// ДЛЯ МОБ
 
-  .item {
-    position: relative;
+@media screen and (max-width: 1199px) {
+  .what-we-do {
+    display: none;
   }
 }
-.title-services {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: $white-color;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 27px;
+
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    padding-bottom: 94px;
+  }
+  .what-we-do-list {
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+      position: relative;
+    }
+  }
+  .title-services {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 27px;
+  }
 }
