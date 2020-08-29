@@ -338,6 +338,7 @@ template {
 }
 
 .backdrop {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -610,7 +611,7 @@ template {
     position: relative;
     background-color: transparent;
     border: none;
-    z-index: 100;
+    z-index: 2;
   }
   .menu-btn.is-open .icon-open {
     display: none;
@@ -757,6 +758,7 @@ template {
 .main-hero {
   padding-top: 118px;
   padding-bottom: 118px;
+  background: rgba(47, 48, 58, 0.4);
 }
 
 .banner {
@@ -1380,7 +1382,7 @@ input {
   }
 }
 
-@media screen and (min-widt: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .card-portfolio .card:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
