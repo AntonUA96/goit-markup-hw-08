@@ -7,21 +7,37 @@
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
+.clients-item {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list {
+    // display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 767px) {
   .clients-item {
     width: 210px;
+    max-width: 100%;
     height: 90px;
   }
 
+  // .clients-list li:not(:nth-last-child(-n + 2)) {
+  //   margin-bottom: 30px;
+  // }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients-list li:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
 }
-
 .clients-item {
   display: flex;
   border: 1px solid $our-team-background-color;

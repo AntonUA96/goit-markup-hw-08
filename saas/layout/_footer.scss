@@ -69,7 +69,9 @@ footer {
 
 .join-in {
   display: block;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
   color: $white-color;
   font-family: $main-font;
   font-weight: 700;
@@ -122,10 +124,10 @@ input {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .form-footer-field {
-    margin-bottom: 20px;
     width: 450px;
+    margin-bottom: 20px;
   }
 }
 // ДЛЯ ТАБЛЕТА

@@ -74,8 +74,11 @@
   .banner {
     background-image: url(../image/header-img.jpg);
   }
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+  }
 }
-
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx),

@@ -63,7 +63,7 @@
 @media screen and (max-width: 767px) {
   .our-team-list .card {
     width: 450px;
-    height: 622px;
+    max-width: 100%;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -81,7 +81,7 @@
 
     .card {
       width: 354px;
-      height: 536px;
+      max-width: 100%;
     }
   }
 }
@@ -105,7 +105,7 @@
 
     & .card {
       width: 270px;
-      height: 428px;
+      max-width: 100%;
     }
   }
   .social-list-icon {

@@ -17,6 +17,7 @@
 
   .card-portfolio .card {
     width: 450px;
+    max-width: 100%;
   }
   .card-portfolio .card:not(:last-child) {
     margin-bottom: 30px;

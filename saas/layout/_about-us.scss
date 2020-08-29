@@ -1,6 +1,9 @@
 // Мобильная версия
 
 .about-us-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $section-background-color;
   height: 120px;
   padding-top: 25px;
@@ -8,9 +11,10 @@
   margin-bottom: 30px;
 
   @media screen and (max-width: 767px) {
-    width: 450px;
-    padding-right: 190px;
-    padding-left: 190px;
+    max-width: 450px;
+    // padding-left: 45%;
+    // padding-right: 190px;
+    // padding-left: 190px;
   }
 }
 
@@ -60,7 +64,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .about-us-list .item {
     width: 354px;
     height: 251px;
